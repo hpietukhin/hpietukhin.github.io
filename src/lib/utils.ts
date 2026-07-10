@@ -38,19 +38,3 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
 
   return `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
 }
-
-export async function fetchBookCover(isbn: string): Promise<string | null> {
-  try {
-    const response = await fetch(`https://bookcover.longitood.com/bookcover/${isbn}`);
-    if (response.ok) {
-      const data = await response.json();
-      return data.url;
-    } else {
-      console.error("Failed to fetch book cover:", JSON.stringify(response));
-      return null;
-    }
-  } catch (error) {
-    console.error("Error fetching book cover:", JSON.stringify(error));
-    return null;
-  }
-}

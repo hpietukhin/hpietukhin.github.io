@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-  overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   color-scheme: light;
 }
 
@@ -66,6 +67,11 @@ book {
 
 .animate.show {
   @apply opacity-100 translate-y-0;
+}
+
+footer.animate,
+footer.animate.show {
+  transform: none;
 }
 
 html #back-to-top {

@@ -1,5 +1,4 @@
 ---
-import { fetchBookCover } from "@lib/utils";
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
@@ -7,13 +6,19 @@ type Props = {
 }
 
 const { entry } = Astro.props;
-const coverURL = await fetchBookCover(entry.data.isbn);
 ---
 
-<a href={`/${entry.collection}/${entry.slug}`} class="relative group flex flex-nowrap py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-    {coverURL && (
+<a href={`/${entry.collection}/${entry.id}`} class="relative group flex flex-nowrap py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+    {entry.data.cover && (
       <div class="w-32 h-48 mr-4">
-        <img src={coverURL} alt={`${entry.data.title} cover`} loading="lazy" class="w-full h-full object-cover rounded" />
+        <img
+          src={entry.data.cover}
+          alt={`${entry.data.title} cover`}
+          loading="lazy"
+          width="333"
+          height="500"
+          class="w-full h-full object-cover rounded"
+        />
       </div>
     )}
     <div class="flex flex-col flex-1 truncate">
