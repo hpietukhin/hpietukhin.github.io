@@ -37,7 +37,7 @@ But wait - what about seniors? Everybody knows that developers love challenges. 
 Here are several ways to make your seniors inspired:
 - Allocate enormous budget for AI usage. Tokens must flow. [Burn](https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/) them with great speed. Do not talk about ROI or actual gains in customer satisfaction (or raises).
 - [Tweak](https://x.com/ClaudeDevs/status/2071671418245492926) your SDLC for the greatest throughput of LOC per day, the more the better. Brag about it everywhere. Do not talk about ROI or actual gains in customer satisfaction.
-- Train an AI model on screen movements and clicks of your developers, [halt](https://www.bbc.com/news/articles/cvglyklz49jo) all of that because of a data breach on a company [level](https://www.bbc.com/news/articles/cq615g3z36po).
+- [Train](https://www.bbc.com/news/articles/cvglyklz49jo) an AI model on screen movements and clicks of your developers, [halt](https://www.bbc.com/news/articles/cq615g3z36po) all of that because of a data breach on a company level.
 
 I am sure that we will find a way to achieve even more with this. Come on folks, we really can get rid of this disgusting [three nines](https://www.buildmvpfast.com/blog/github-three-nines-reliability-developer-platform-2026). 🙃
 
