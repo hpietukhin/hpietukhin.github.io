@@ -9,23 +9,25 @@ Let's say you were a junior in 2022, as I was. What would be your day-to-day wor
 - Implementing small scoped features with straightforward explanations on how to do it
 - Debugging and maintaining legacy code
 
-These 2 activities were enough for you because your days were eaten by Stack Overflow, browsing some obscure docs for Java 8 (Well, [look](https://docs.oracle.com/javase/specs/jls/se26/html/index.html) how Java docs look even now. [Compare](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions) it with its evil twin C# and with their hipster sibling [Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions))[^1].
+These 2 activities were enough for you because your days were eaten by Stack Overflow and browsing some obscure docs for Java 8[^1].
 
 It took only 4 years for LLMs to be able to one-shot, or at least greatly steer such tasks - for example, [see](https://www.youtube.com/watch?v=PmW4-tcMQbc) this practical talk on how to work on Spring Boot with agents. 
 
 So, if you can prompt a coding agent (nowadays anyone can[^2]), you can do all these tasks with greater ease. And don't get me wrong, I'm lovin' it!
 
+So we can say you've been promoted, since your skill level has 'risen'. Whether this is *actually* the case doesn't matter — what matters to you (and to your employer) is the result. Moreover, this is a good thing: it will help you get used to how promotions *actually* work — first you step into a new role, and only after some time is your status officially confirmed. The only difference with AI is that in addition to picking up new skills, you'll also have to prevent the degradation of old ones.
+
 
 As always there is only one correct answer - you should lead the revolution if you cannot fight against it. Learn those tools, but only as tools in your toolbelt. Do not buy into aggressive marketing from AI labs. Just be wary of several things:
 
-1. From the point of view of business it does not matter how a task will be done, you should use all tools at your disposal for completing the task in the fastest manner possible. For juniors: any business nowadays expects from you something more than the ability to close tickets or write code with a detailed spec. Be the software engineer you always dreamed of being! It means you should execute and bring value on a level higher than coding:
-   - navigating changing requirements and clarifying them with stakeholders, tailoring it to their needs
+1. From the point of view of business it does not matter how a task will be done, you should use all tools at your disposal for completing the task in the fastest manner possible. For juniors: any business nowadays expects from you something more than the ability to close tickets or write code with a detailed spec. Be the software engineer you always dreamed of being! It means you should focus on skills at a level higher than coding:
+   - navigating changing requirements and clarifying them with stakeholders, and tailoring software to their needs
    - owning solutions end-to-end
-   - understanding systems in a more complex way with system design
-   - building meaningful products[^3]
+   - understanding systems as a whole and using system design and software architecture. Arguably this is the last useful skill and it should be prioritized over learning new libraries or programming languages.
+   - building products and growing product mindset[^3]
 2. Overreliance on coding agents can give you short bursts of productivity, but you will never streamline your performance. [You should be tired](https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/) in a correct manner because of learning, not doomscrolling.
-3. There is no guarantee that AI development will not stall, yet AI labs will gladly sell you some doom vision where every college graduate or knowledge worker generally will be obsolete. Completely [ignore](https://www.youtube.com/shorts/mpg8kZkjA-o) all aggressive marketing from AI labs.
-4. Coding is a pain, but there are other aspects of software engineering. And these aspects will require agency and humans[^4].
+3. There is no guarantee that AI development will not stall, yet AI labs will gladly sell you some doom vision where every college graduate or knowledge worker generally will be obsolete. Completely [ignore](https://www.youtube.com/shorts/mpg8kZkjA-o) all BS.
+4. Coding was a challenge in itself, but there are other aspects of software engineering. And these aspects will require agency and humans[^4].
 5. For leading the revolution you must maintain yourself physically and mentally. My uni supervisor advised to spend as much time as you can outdoors. Your city certainly has gyms, exhibitions, concerts, open lectures not related to tech or simply beautiful scenery.
 
 In our times learning generally and the skill of learning and adaptation will be even more important. Maybe in the future I will write about educational apps I have an idea about. But for now, see the list of good [books](/books/) covering this.
@@ -45,7 +47,7 @@ I am sure that we will find a way to achieve even more with this. Come on folks,
 
 And remember - wherever you will be, remember that as a human you have willpower and use it with sheer optimism, because Beethoven [told](https://www.goodreads.com/quotes/223478-i-will-take-fate-by-the-throat-it-will-never) you so. And he knew what he was talking about. Read his [biography](https://en.wikipedia.org/wiki/Ludwig_van_Beethoven) and listen to his [music](https://www.youtube.com/watch?v=Vi05EG6sTVQ&list=RDVi05EG6sTVQ&start_radio=1).
 
-[^1]: It can actually be a good thing - maybe Java devs are more motivated to remember Java obscurities rather than deal with this.
+[^1]: Well, [look](https://docs.oracle.com/javase/specs/jls/se26/html/index.html) how Java docs look even now. [Compare](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions) it with its evil twin C# and with their hipster sibling [Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions). It can actually be a good thing - maybe Java devs are more motivated to remember Java obscurities rather than deal with this.
 [^2]: Do you remember the hysteria around "prompt engineering" and "spec-driven development"? Turned out you can talk to LLM as you would talk to your regular coworker.
-[^3]: See this [book](/books/03-the-missing-readme-riccomini/) on how to move to this next stage.
+[^3]: See this [book](/books/03-the-missing-readme-riccomini/) for more details on how to move to this next stage.
 [^4]: https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/
