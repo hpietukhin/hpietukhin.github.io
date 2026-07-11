@@ -2,11 +2,12 @@
 import { getCollection, render } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
+import CompanyName from "@components/CompanyName.astro";
 import { dateRange } from "@lib/utils";
 import { WORK } from "@consts";
 
 const collection = (await getCollection("work"))
-  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf());
+  .sort((current, previous) => previous.data.dateStart.valueOf() - current.data.dateStart.valueOf());
 
 const work = await Promise.all(
   collection.map(async (item) => {
@@ -30,7 +31,7 @@ const work = await Promise.all(
                 {dateRange(entry.data.dateStart, entry.data.dateEnd)}
               </div>
               <div class="font-semibold theme-heading">
-                {entry.data.company}
+                <CompanyName company={entry.data.company} />
               </div>
               <div class="text-sm opacity-75">
                 {entry.data.role}

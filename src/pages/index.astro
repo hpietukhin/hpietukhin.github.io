@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
+import CompanyName from "@components/CompanyName.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
@@ -13,7 +14,7 @@ const projects = (await getCollection("projects"))
   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
 
 const allwork = (await getCollection("work"))
-  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
+  .sort((current, previous) => previous.data.dateStart.valueOf() - current.data.dateStart.valueOf())
   .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
 
   const educationPromise = (await getCollection("education"))
@@ -87,7 +88,7 @@ const work = await Promise.all(
                 {dateRange(entry.data.dateStart, entry.data.dateEnd)}
               </div>
               <div class="font-semibold theme-heading">
-                {entry.data.company}
+                <CompanyName company={entry.data.company} />
               </div>
               <div class="text-sm opacity-75">
                 {entry.data.role}
