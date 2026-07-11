@@ -1,6 +1,6 @@
 ---
 company: "Slovenská sporiteľňa, a.s."
-role: "Junior Java Developer"
+role: "Java Developer"
 dateStart: "04/01/2022"
 dateEnd: "12/01/2022"
 ---

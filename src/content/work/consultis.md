@@ -1,8 +1,8 @@
 ---
 company: "Consultis k.s."
-role: "Full-stack Developer"
-dateStart: "03/01/2022"
-dateEnd: "Current"
+role: "Full Stack Engineer"
+dateStart: "02/01/2023"
+dateEnd: "02/01/2025"
 ---
 
 As a fullstack software developer in a small team, I worked closely with colleagues on several impactful projects on backend and frontend sides.  

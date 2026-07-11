@@ -28,8 +28,7 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
 
   if (endDate) {
     if (typeof endDate === "string") {
-      endMonth = "";
-      endYear = endDate;
+      return `${startMonth} ${startYear} - ${endDate}`;
     } else {
       endMonth = endDate.toLocaleString("en-US", { month: "long" });
       endYear = endDate.getFullYear().toString();
