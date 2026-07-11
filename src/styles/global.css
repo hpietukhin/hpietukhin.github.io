@@ -242,33 +242,9 @@ book {
     display: inline-block;
   }
 
-  .back-button {
-    padding-left: 0.75rem;
-    transform: translateX(0);
-    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, border-color 300ms ease-in-out, padding-left 300ms ease-in-out, transform 300ms ease-in-out;
-  }
-
-  .back-button:hover,
-  .back-button:focus-visible {
-    padding-left: 2rem;
-    transform: translateX(-1.25rem);
-  }
-
-  .back-button .pixel-arrow {
-    opacity: 0;
-    transform: translateY(calc(-50% + 0.75rem));
-    transition: opacity 700ms ease-out 160ms, transform 700ms ease-out 160ms;
-  }
-
   .group:hover .pixel-arrow,
   .group:focus-visible .pixel-arrow {
     opacity: 1;
-  }
-
-  .back-button:hover .pixel-arrow,
-  .back-button:focus-visible .pixel-arrow {
-    opacity: 1;
-    transform: translateY(-50%);
   }
 }
 
