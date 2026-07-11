@@ -13,10 +13,10 @@ const books = (await getCollection("books"))
 <PageLayout title={BOOKS.TITLE} description={BOOKS.DESCRIPTION}>
   <Container>
     <div class="space-y-10">
-      <div class="animate font-semibold text-black dark:text-white">
+      <div class="font-semibold theme-heading">
         Books
       </div>
-      <ul class="animate flex flex-col gap-4">
+      <ul class="flex flex-col gap-4">
         {
           books.map((book) => (
             <li>
