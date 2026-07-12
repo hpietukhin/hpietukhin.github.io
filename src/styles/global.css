@@ -97,6 +97,16 @@ footer {
   @apply py-5 text-sm;
 }
 
+@keyframes render-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold;
@@ -176,6 +186,18 @@ book {
   .theme-link:hover {
     color: var(--link-hover);
     text-decoration-color: var(--link-decoration-hover);
+  }
+
+  main article,
+  main .theme-card {
+    animation: render-fade 200ms ease-out both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    main article,
+    main .theme-card {
+      animation: none;
+    }
   }
 
   .theme-card {
